@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пряник и Рогалик</title>
+</head>
+<body>
+    <a href="#start" class="linkToTheTop">
+        <button class="toTheTop">to the top</button>      
+      </a>
+    <div class="banner" id="start">
+        <ul class="hat_ul">
+            <li class="hat"><a href="#menu">Меню</a></li>            
+            <li class="hat"><a href="#comment">Отзывы</a></li>
+            <li class="hat"><a href="#map">Как нас найти</a></li>
+        </ul>               
+    </div>
+    <div class="menu" id="menu">
+         <h1 class="menu_header">Меню</h1>       
+        <div class="cakes product" id="cakes">Торты</div>
+        <div class="jj" id="jj"><a href="доп страницы/torti.html" target="_blank">Перейти к выбору тортов</a></div>
+        <div class="buisquits product" id="buisquits">Пирожные</div>
+        <div class="jj" id="gg"><a href="доп страницы/buiqscuits.html" target="_blank">Перейти к выбору пирожных</a></div>
+        <div class="buns product" id="buns">Булочки</div>
+        <div class="jj" id="hh"><a href="доп страницы/buns.html" target="_blank">Перейти к выбору булочек</a></div>
+        <div class="hot product" id="hot">Горячие закуски</div>
+        <div class="jj" id="ff"><a href="доп страницы/hot.html" target="_blank">Перейти к выбору горячих закусок</a></div>
+        <div class="cold product" id="cold">Холодные закуски</div>
+        <div class="jj" id="dd"><a href="доп страницы/cold.html" target="_blank">Перейти к выбору холодных закусок</a></div>
+    </div>
+    <div class="comment" id="comment">
+        <h1 class="comment_header">Отзывы</h1>
+        <div class="card">
+            <div class="cards">Он полный 💣💣💣</div>
+            <div class="cards">...И лес, и эклеры <span class="pryanik">Пряник и Рогалик</span> лучшие на свете! Это прям точно.</div>
+            <div class="cards">Очень уютное и спокойное место. Идеально для посиделок с детьми. А уж какая вкуснятина. Особенно корзиночки с домашними ягодами.</div>
+            <div class="cards">И лучшие пирожные в Троицке в <span class="pryanik">Пряник и Рогалик</span></div>
+            <div class="cards"><span class="pryanik">Пряник и Рогалик</span> 🥐, то кафе в котором очень нуждался наш Троицк. Теперь за посиделками и вкусняшками только к вам</div>
+            <div class="cards">Вкуснющий торт от <span class="pryanik">Пряник и Рогалик</span>, покорившей всех гостей. Спасибо!</div>
+            <div class="cards">Это было потрясающе вкусно🤤. Безусловное доверие 👉🏻 <span class="pryanik">Прияник и Рогалик</span></div>
+            <div class="cards">Наш очень вкусный и красивый тортик от <span class="pryanik">пряник и Рогалик</span></div>
+            <div class="cards">Неизменно потрясающий торт от <span class="pryanik">Пряник и Рогалик</span></div>
+        </div>
+    </div>
+    <div class="coordination" id="map">
+        <h1 class="coordination_header">Как нас найти</h1>
+        <p class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2261.2270211939244!2d37.30685722327574!3d55.47614089156628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413555ef9ce2f3f7%3A0x85458336ffe47305!2z0J_RgNGP0L3QuNC6JtGA0L7Qs9Cw0LvQuNC6!5e0!3m2!1sru!2sru!4v1608552974795!5m2!1sru!2sru" width="1400" height="800"></p></iframe>
+    </div>
+    <div class="footer">
+        <p class="contacts">Контакты: 89262557832</p>
+    </div>
+<script>
+    let products = document.getElementById("product")
+    let cakesBTN = document.getElementById("cakes")
+    let jj = document.getElementById("jj")        
+    
+    let buisquitsBTN = document.getElementById("buisquits")
+    let gg = document.getElementById("gg")
+    
+    let bunsBTN = document.getElementById("buns")
+    let hh = document.getElementById("hh")
+
+
+    let hotBTN = document.getElementById("hot")
+    let ff = document.getElementById("ff")
+
+
+    let coldBTN = document.getElementById("cold")
+    let dd = document.getElementById("dd")
+    
+    cakesBTN.onclick = function() {
+        jj.style.display = "flex";        
+        if (jj.style.display = "flex") {
+            cakesBTN.onclick = function() {
+                jj.style.display = "none";
+            }
+        }
+    }    
+
+    buisquitsBTN.onclick = function() {
+        gg.style.display = "flex";
+        if (gg.style.display = "flex") {
+            buisquitsBTN.onclick = function() {
+                gg.style.display = "none";
+            }
+        }
+    }
+
+    bunsBTN.onclick = function() {
+        hh.style.display = "flex";
+        if (hh.style.display = "flex") {
+            bunsBTN.onclick = function() {
+                hh.style.display = "none";
+            }
+        }
+    }
+   
+    hotBTN.onclick = function() {
+        ff.style.display = "flex";
+        if (ff.style.display = "flex") {
+            hotBTN.onclick = function() {
+                ff.style.display = "none";
+            }
+        }
+    }
+
+    coldBTN.onclick = function() {
+        dd.style.display = "flex";
+        if (dd.style.display = "flex") {
+            coldBTN.onclick = function() {
+                dd.style.display = "none";
+            }
+        }
+    }
+</script>
